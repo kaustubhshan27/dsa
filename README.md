@@ -1,2 +1,2 @@
-# DSA
-Datastructures and Algorithms
+# Trees
+Binary Trees, BSTs, AVL Trees
