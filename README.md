@@ -1,2 +1,1 @@
-# Trees
-Binary Trees, BSTs, AVL Trees
+# Data Structures & Algorithms
