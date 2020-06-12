@@ -18,6 +18,7 @@ struct stackNode{
 };
 typedef struct stackNode STACKNODE;
 STACKNODE *top = nullptr;
+
 void push_stack(NODE *node)
 {
     STACKNODE *st_node = new STACKNODE;
@@ -34,6 +35,7 @@ void push_stack(NODE *node)
         top = st_node;
     }
 }
+
 NODE* pop_stack(void)
 {
     if(top == nullptr)
@@ -159,10 +161,17 @@ bool bst_recursiveSearch(NODE *node, int ele)
         return false;
     else
     {
+        bool status;
         if(node->data > ele)
-            bst_recursiveSearch(node->Lchild, ele);
+        {
+            status = bst_recursiveSearch(node->Lchild, ele);
+            return status;
+        }
         else if(node->data < ele)
-            bst_recursiveSearch(node->Rchild, ele);
+        {
+            status = bst_recursiveSearch(node->Rchild, ele);
+            return status;
+        }
         else
             return true;
     }
