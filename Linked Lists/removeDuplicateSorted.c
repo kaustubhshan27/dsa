@@ -44,7 +44,7 @@ void createLL(void)
     fputs("Enter element: ", stdout);
     scanf("%d", &element);
     newNode->data = element;
-    //printf("\n---YULU---\n");
+
     if(start == NULL)
     {
         start = newNode;
@@ -73,15 +73,13 @@ void displayLL(void)
 void deleteDuplicate(void)
 {
     NODE *ptr;
-    ptr = start->next;//RIGID MIND!!!
+    ptr = start->next;
     prev = start;
     while(ptr != NULL)
     {
-        //printf("\n---YULU1---\n");
         if(prev->data == ptr->data)
         {
             prev->next = ptr->next;
-            //printf("\n---YULU2---\n");
             free(ptr);
             ptr = prev->next;
         }

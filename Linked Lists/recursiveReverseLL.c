@@ -44,7 +44,7 @@ void createLL(void)
     fputs("Enter element: ", stdout);
     scanf("%d", &element);
     newNode->data = element;
-    //printf("\n---YULU---\n");
+    
     if(start == NULL)
     {
         start = newNode;

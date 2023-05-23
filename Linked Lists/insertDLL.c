@@ -76,7 +76,7 @@ void insertDLL(int ele, int pos)
     {
         newNode->prev = NULL;
         newNode->next = start;
-        start->prev = newNode;//even without adding this line it "worked" because we're just printing in forward direction
+        start->prev = newNode; /* even without adding this line it "worked" because we're just printing in forward direction */
         start = newNode; 
     }
     else
@@ -86,8 +86,8 @@ void insertDLL(int ele, int pos)
         newNode->next = ptr->next;
         newNode->prev = ptr;
         if(ptr->next != NULL)
-            ptr->next->prev = newNode;//even without adding this line it "worked" because we're just printing in forward direction
-        ptr->next = newNode;//order of assignment is important
+            ptr->next->prev = newNode; /* even without adding this line it "worked" because we're just printing in forward direction */
+        ptr->next = newNode; /* order of assignment is important */
     }
 }
 

@@ -28,7 +28,8 @@ int main(void)
     displayLL(start1);
     fputs("Displaying LL2: \n", stdout);
     displayLL(start2);
-    //Concatenating the 2 linked lists
+
+    /* concatenating the 2 linked lists */
     join(start1, start2);
     fputs("Displaying joined LL: \n", stdout);
     displayLL(start1);
@@ -60,6 +61,7 @@ void createLL(NODE **begin)
         }
         prev = newNode;
         fputs("Enter 'y' to CONTINUE & 'n' to QUIT\n", stdout);
+        /* clears the input buffer */
         while(getchar() != '\n')
             continue;
     }

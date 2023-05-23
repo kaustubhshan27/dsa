@@ -11,7 +11,8 @@ NODE *head = NULL;
 NODE *prev = NULL;
 
 void createCLL(void);
-void reverseCLL(void);//reverse using sliding pointers
+/* reverse using sliding pointers */
+void reverseCLL(void);
 void displayCLL(void);
 
 int main(void)
@@ -73,7 +74,7 @@ void reverseCLL(void)
     start = head;
 
     NODE *ptr = head;
-    do//to get the last node
+    do /* to get the last node */
     {
         ptr = ptr->next;
     } while (ptr->next != head);

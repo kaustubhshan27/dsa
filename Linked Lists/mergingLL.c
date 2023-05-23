@@ -14,6 +14,7 @@ NODE *third = NULL;
 
 void createLL(NODE **);
 void displayLL(NODE *);
+/* merging 2 sorted linked lists in a sorted fashion */
 void merging(NODE *, NODE *);
 
 int main(void)
@@ -29,7 +30,7 @@ int main(void)
     displayLL(start1);
     fputs("Displaying LL2: \n", stdout);
     displayLL(start2);
-    //Concatenating the 2 linked lists
+    /* concatenating the 2 linked lists */
     merging(start1, start2);
     fputs("Displaying joined LL: \n", stdout);
     displayLL(third);
@@ -72,7 +73,7 @@ void merging(NODE *begin1, NODE *begin2)
 {
     NODE *last;
 
-    if(begin1->data < begin2->data)//for deciding from which LL we take first node
+    if(begin1->data < begin2->data) /* for deciding from which LL we take first node */
     {
         third = begin1;
         last = begin1;

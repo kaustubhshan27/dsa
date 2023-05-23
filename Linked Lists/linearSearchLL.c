@@ -71,9 +71,11 @@ int searchLL(int element)
         pos++;
         if(ptr->data == element)
         {
+            /* putting the most recently searched element at the front so that it takes lesser time to access next time */
             prev->next = ptr->next;
             ptr->next = start;
             start = ptr;
+
             return pos;
         }
         prev = ptr;

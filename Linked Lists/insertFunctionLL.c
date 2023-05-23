@@ -9,7 +9,7 @@ struct Node
 typedef struct Node NODE;
 static NODE *start = NULL;
 static NODE *prev = NULL;
-//Creation by insertion
+/* creation by insertion */
 void insertLL(int, int);
 int countNodes();
 void displayLL(void);
