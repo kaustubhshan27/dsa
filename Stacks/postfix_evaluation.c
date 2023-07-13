@@ -14,7 +14,7 @@ NODE *top = NULL;
 
 struct Eval
 {
-    int op;
+    int op; //operand to evaluate once the infix expression is converted to a postfix expression
     struct Eval *next;
 };
 typedef struct Eval EVAL;

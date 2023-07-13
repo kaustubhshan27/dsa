@@ -10,7 +10,7 @@ struct Node
 typedef struct Node NODE;
 NODE *top = NULL;
 
-const char *expr = "((a+b)*(c+d))";//not balanced
+const char *expr = "((a+b)*(c+d))";
 
 bool balanced(const char *);//do not want the contents of the character array to be changed in the function hence used 'const'
 

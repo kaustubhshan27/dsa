@@ -35,7 +35,7 @@ int main(void)
             while(top != NULL && (top->in_stack_prec >= char_precedence))//popping stack elements till we can push into stack
             {
                 char pop_char = pop();
-                if(pop_char != '(')
+                if(pop_char != '(') //no need to put brackets in the resulting expression
                     result[res_i++] = pop_char;
             }
 
@@ -52,8 +52,8 @@ int main(void)
             }
             */
 
-           if(expr[index] != ')')
-                push(expr[index]);//pushing into stack if stack is empty
+           if(expr[index] != ')') //no need to put brackets in the resulting expression
+                push(expr[index]); //pushing into stack if stack is empty
 
         }
     }
