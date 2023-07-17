@@ -29,17 +29,6 @@ int main(void)
         while(top != NULL && (top->precedence >= char_precedence))//popping stack elements till we can push into stack
             result[res_i++] = pop();
 
-        /*
-        Below checking not required since we're already checking the conditions above
-        if(top != NULL)//after checking for popping, push into stack if stack is empty
-        {
-            if(char_precedence > top->precedence)//condition for pushing into stack
-                push(&stack, expr[index]);
-        }
-        else
-            push(&stack, expr[index]);//pushing into stack if stack is empty
-        */
-
         push(expr[index]);//pushing into stack after removing the item with >= precedence
     }
     while(top != NULL)//popping stack elements left in stack after traversing array

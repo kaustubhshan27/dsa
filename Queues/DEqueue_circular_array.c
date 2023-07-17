@@ -127,6 +127,3 @@ void display(QUEUE *dq)
         putchar('\n');
     }
 }
-
-
-

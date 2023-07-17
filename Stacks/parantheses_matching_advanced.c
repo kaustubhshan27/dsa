@@ -21,6 +21,7 @@ int main(void)
     else
         fputs("The expression is not balanced!\n", stdout);
 }
+
 bool balanced(char *expr)
 {
     for(size_t index = 0; expr[index] != '\0'; index++)
